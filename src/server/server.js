@@ -5,7 +5,7 @@ const io = require('socket.io')(server, { cors: true })
 
 server.listen(8090, () => console.log('服务器启动'))
 const wordArr = ['Monkey', 'Dog', 'Bear', 'Flower', 'Girl']
-
+let hbeat = new Map()
 let storage = new Map()
 io.on('connection', (socket) => {
   socket.on('title', (roomID) => {
@@ -48,3 +48,13 @@ io.on('connection', (socket) => {
     }
   })
 })
+io.on('disconnect', (socket) => {
+  console.log(socket.id)
+})
+// app.post('/query', (req, res) => {
+//   const roomID = req.roomID
+//   if(storage.get(roomID)===''){
+//
+//   }
+// })
+
