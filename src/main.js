@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import VueSocketIO from 'vue-socket.io'
 import SocketIO from 'socket.io-client'
+import axios from 'axios'
+Vue.prototype.$axios = axios
 
 Vue.use(new VueSocketIO({
   // debug: true,

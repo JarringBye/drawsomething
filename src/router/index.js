@@ -13,16 +13,6 @@ const routes = [
     path: '/roompage:roomID',
     name: 'roompage',
     component: () => import('../views/room-page.vue')
-  },
-  {
-    path: '/drawingpage:roomID',
-    name: 'drawingpage',
-    component: () => import('../views/drawing-board')
-  },
-  {
-    path: '/showingpage:roomID',
-    name: 'showingpage',
-    component: () => import('../views/showing-board')
   }
 ]
 

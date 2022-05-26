@@ -6,8 +6,16 @@
 
 <style lang="less">
 
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  padding-left: 5px;
+}
 html,body,#app{
   height: 100%;
+  min-height: 100vh;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
